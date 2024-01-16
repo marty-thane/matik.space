@@ -115,6 +115,23 @@ details summary::marker {
 	content: "";
 }
 
+#posts {
+	font-family: sans-serif;
+	list-style: none;
+	margin: auto;
+	padding: 5px 10px;
+	max-width: 20em;
+	background-color: #eeeeee;
+	border-radius: 5px;
+	font-size: 1.3em;
+}
+#posts a {
+	text-decoration: none;
+}
+#posts a:hover {
+	text-decoration: underline;
+}
+
 header {
 	font-size: 0.9em;
 	font-family: sans-serif;

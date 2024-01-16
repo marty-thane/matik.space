@@ -1,8 +1,8 @@
 ---
-title: "Testovací"
+title: "Test"
 date: 2024-01-16T15:07:52+01:00
 draft: false
-keywords: ["ahoj", "hola"]
+keywords: ["ahoj"]
 description: "ahoj"
 ---
 
