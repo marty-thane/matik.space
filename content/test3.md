@@ -1,5 +1,5 @@
 ---
-title: "Test"
+title: "Tesdadjawindl k:uiht"
 date: 2024-01-16T15:07:52+01:00
 draft: false
 keywords: ["ahoj"]
@@ -16,8 +16,14 @@ tohle je takový malý test.
 
 Tohle je další odstavec. [idjawo](dawdoawhioj) dnwaiud nawlkjd bnawiduhawdil jawkdn, wpui ejdfn,fpeoasfů jdmnew aufhaelk,fn dfewaufh alkjdyn,f iuleh
 
+![ahoj](thumb.png)
+
 > dwiadjoadwjidoawj
 >d aw huawi h
+
+dwadijawnkdl nawidu ssmf,biuaelfjkyn fawueisfcn, 
+
+$$x = \frac{1}{2}$$
 
 dwadijawnkdl nawidu ssmf,biuaelfjkyn fawueisfcn, 
 
@@ -38,3 +44,4 @@ dwhaiduhwa
 {{< spoiler label="Příklad" summary="Je tohle správně?" >}}
 ano!
 {{< /spoiler >}}
+

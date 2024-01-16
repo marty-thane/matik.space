@@ -1,5 +1,5 @@
 baseURL = "https://example.com/"
-title = "Matik"
+title = "Matik.to"
 theme = "mug"
 languageCode = "cs"
 disableKinds = ["taxonomy", "taxonomyTerm"]
