@@ -1,0 +1,9 @@
+{{ define "main" }}
+	<ul>
+	  {{ range sort .Pages "Date" "desc" }}
+		<li>
+		  <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+		</li>
+	  {{ end }}
+	</ul>
+{{ end }}

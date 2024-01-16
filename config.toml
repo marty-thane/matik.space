@@ -1,0 +1,19 @@
+baseURL = "https://example.com/"
+title = "Matik"
+theme = "mug"
+languageCode = "cs"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+titleCaseStyle = "firstupper"
+
+[params]
+  author = "Martin Zeman"
+  contact = "johndoe@email.com"
+  disableTags = true
+  disableCategories = true
+
+[build.minify]
+  css = true
+  js = true
+  html = true
+
+disableLiveReload = false

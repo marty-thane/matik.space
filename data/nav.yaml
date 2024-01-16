@@ -1,0 +1,7 @@
+main:
+  - name: "Články"
+    url: /
+    weight: 1
+  - name: "O Matikovi"
+    url: /about/
+    weight: 2

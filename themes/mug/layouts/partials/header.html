@@ -1,0 +1,8 @@
+<header>
+	<h1>{{ .Site.BaseURL }}</h1>
+		<ul>
+			{{ range .Site.Data.nav.main }}
+				<li><a href="{{ .url }}">{{ .name }}</a></li>
+			{{ end }}
+		</ul>
+</header>
