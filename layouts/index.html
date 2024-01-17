@@ -1,0 +1,20 @@
+{{ define "main" }}
+	<input type="text" id="searchInput" placeholder="Hledat">
+	<script src="/js/search.js"></script>
+	<ul id="posts">
+		{{ range sort .Pages "Date" "desc" }}
+		<li>
+			<a href="{{ .Permalink }}">
+				<img src="{{ .Permalink}}thumb.png" alt="{{ .LinkTitle }} thumbnail">
+				<p>{{ .LinkTitle }}</p>
+				{{ with .Keywords }}
+					<p class="keywords">{{ delimit . ", " }}</p>
+				{{ end }}
+				{{ with .Description }}
+					<p class="description">{{ . }}</p>
+				{{ end }}
+			</a>
+		</li>
+		{{ end }}
+	</ul>
+{{ end }}

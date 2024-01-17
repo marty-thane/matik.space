@@ -30,6 +30,6 @@ Tohle je další odstavec. [idjawo](dawdoawhioj) dnwaiud nawlkjd bnawiduhawdil j
 echo ahoj;
 dwhaiduhwa
 ```
-{{< spoiler label="Příklad" summary="Je tohle správně?" >}}
+{{< details label="Příklad" summary="Je tohle správně?" >}}
 ano!
-{{< /spoiler >}}
+{{< /details >}}

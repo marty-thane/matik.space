@@ -175,10 +175,7 @@ input[type="text"]:focus {
 	margin: 10px;
 	border-radius: 5px;
 	background-color: #e6e6e6;
-}
-
-#posts li:hover {
-	background-color: #e6e6e6;
+	font-family: var(--sans-serif);
 }
 
 #posts li a {
@@ -197,12 +194,15 @@ input[type="text"]:focus {
 #posts li p {
 	text-align: center;
 	margin: 0 10px 5px 10px;
-	font-family: var(--sans-serif);
 	font-weight: bold;
 }
 
 #posts a {
 	text-decoration: none;
+}
+
+#posts a:hover {
+	text-decoration: underline;
 }
 
 /* notice */

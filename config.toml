@@ -1,8 +1,7 @@
 baseURL = "https://example.com/"
-title = "Matik.to"
-theme = "mug"
+title = "matik.space"
 languageCode = "cs"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm", "404", "RSS"]
 titleCaseStyle = "firstupper"
 
 [params]

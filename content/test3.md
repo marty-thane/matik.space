@@ -41,7 +41,7 @@ dwadijawnkdl nawidu ssmf,biuaelfjkyn fawueisfcn, dwadijawnkdl nawidu ssmf,biuael
 echo ahoj;
 dwhaiduhwa
 ```
-{{< spoiler label="Příklad" summary="Je tohle správně?" >}}
+{{< details label="Příklad" summary="Je tohle správně?" >}}
 ano!
-{{< /spoiler >}}
+{{< /details >}}
 
