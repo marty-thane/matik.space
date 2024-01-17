@@ -10,11 +10,13 @@ dawhodn awioaw ndaw d
  
 ## Jednotková kružnice
 
-tohle je takový malý test.
+tohle je takový malý test. `ahoj` wa dujwanawuidlk jadnuwidhklfnrueiygfjnaiufhajkdlfnewauirfesakldfnieasflkdjynfiuahflkjdsfnawiefblksdfnrpduh ae hrfpeoi hhjfpoaesjf lkasnfpoe fpoajesfldnfpoi eiawfeas nfo ewan
 
 ## iawjoi
 
-Tohle je další odstavec. [idjawo](dawdoawhioj) dnwaiud nawlkjd bnawiduhawdil jawkdn, wpui ejdfn,fpeoasfů jdmnew aufhaelk,fn dfewaufh alkjdyn,f iuleh
+Tohle je další odstavec. [idjawo](dawdoawhioj) dnwaiud nawlkjd bnawiduhawdil jawkdn, wpui ejdfn,fpeoasfů jdmnew aufhaelk,fn dfewaufh alkjdyn,f iuleh[^1]
+
+[^1]: Ahoj kubo.
 
 ![ahoj](thumb.png)
 

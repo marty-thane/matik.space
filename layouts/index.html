@@ -1,7 +1,7 @@
 {{ define "main" }}
 	<input type="text" id="searchInput" placeholder="Hledat">
 	<script src="/js/search.js"></script>
-	<ul id="posts">
+	<ul id="postIndex">
 		{{ range sort .Pages "Date" "desc" }}
 		<li>
 			<a href="{{ .Permalink }}">

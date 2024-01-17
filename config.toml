@@ -15,4 +15,4 @@ titleCaseStyle = "firstupper"
   js = true
   html = true
 
-disableLiveReload = false
+disableLiveReload = true

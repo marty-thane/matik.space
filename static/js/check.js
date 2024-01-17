@@ -1,2 +1,2 @@
-var notice = document.getElementById("notice");
-notice.style.display = "none";
+var notice = document.getElementById("jsNotice");
+//notice.style.display = "none";

@@ -1,6 +1,6 @@
 document.getElementById("searchInput").addEventListener("input", function () {
 	var searchQuery = this.value.toLowerCase();
-	var posts = document.getElementById("posts").getElementsByTagName("li");
+	var posts = document.getElementById("postIndex").getElementsByTagName("li");
 
 	for (var i = 0; i < posts.length; i++) {
 		var postLink = posts[i].getElementsByTagName("a")[0];
