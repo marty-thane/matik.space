@@ -6,5 +6,8 @@ titleCaseStyle = "firstupper"
 
 [params]
   author = "Martin Zeman"
-  disableTags = true
-  disableCategories = true
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"

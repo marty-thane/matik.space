@@ -5,14 +5,15 @@
 		{{ range sort .Pages "Date" "desc" }}
 		<li>
 			<a href="{{ .Permalink }}">
-				<img src="{{ .Permalink}}thumb.png" alt="{{ .LinkTitle }} thumbnail">
-				<p>{{ .LinkTitle }}</p>
-				{{ with .Keywords }}
-					<p class="keywords">{{ delimit . ", " }}</p>
-				{{ end }}
-				{{ with .Description }}
-					<p class="description">{{ . }}</p>
-				{{ end }}
+				<img src="{{ .Permalink}}thumb.png" alt="{{ .LinkTitle }} &ndash;">
+					<p class="title">{{ .LinkTitle }}</p>
+					{{ with .Keywords }}
+						<p class="keywords">{{ delimit . ", " }}</p>
+					{{ end }}
+					{{ with .Description }}
+						<p class="description">{{ . }}</p>
+					{{ end }}
+				</div>
 			</a>
 		</li>
 		{{ end }}

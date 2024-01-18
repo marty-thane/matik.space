@@ -1,6 +1,6 @@
 ---
 title: "Odvození některých kombinatorických vzorců"
-date: 2024-01-16T15:07:52+01:00
+date: 2023-01-16T15:07:52+01:00
 draft: false
 keywords: ["ahoj"]
 description: "ahoj"
@@ -47,3 +47,15 @@ dwhaiduhwa
 ano!
 {{< /details >}}
 
+dawjndiawndk awndli aw daw
+d d 
+dawjndiawndk awndli aw daw
+d d 
+aefa
+ers fra foseijfseo afjoi fjasel fmafi aseofklsmfseioů fjrl-kfreagf 
+erag are
+g 
+aefa
+ers fra foseijfseo afjoi fjasel fmafi aseofklsmfseioů fjrl-kfreagf 
+erag are
+g 
