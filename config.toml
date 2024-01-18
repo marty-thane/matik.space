@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://matik.space/"
 title = "matik.space"
 languageCode = "cs"
 disableKinds = ["taxonomy", "taxonomyTerm", "404", "RSS"]
@@ -6,13 +6,5 @@ titleCaseStyle = "firstupper"
 
 [params]
   author = "Martin Zeman"
-  contact = "johndoe@email.com"
   disableTags = true
   disableCategories = true
-
-[build.minify]
-  css = true
-  js = true
-  html = true
-
-disableLiveReload = true
