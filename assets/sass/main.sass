@@ -1,44 +1,47 @@
-/* posts */
-/* mobilní optimalizace */
-/* print */
+/* Color Variables */
 $black: #1a1a1a
 $white: #fdfdfd
 $red: #c83230
-$blue: 	#1753b2
+$blue: #1753b2
 $lightgrey: #e6e6e6
 $darkgrey: #606060
-$font-size: 20px
+
+/* Font Variables */
 $serif: Georgia, serif
 $sans-serif: Arial, sans-serif
 $monospace: "Courier New", monospace
 
+/* Base Styles */
 body
   margin: 0
-  padding: 0
   line-height: 1.5
-  font-size: $font-size
   font-family: $serif
+  font-size: 20px
+  color: $black
+  background: $white
 
 main
   max-width: 720px
   margin: 0 auto
-  padding: 0 ($font-size / 2)
+  padding: 0 10px
+
+p
+  margin: 20px 0
 
 hr
   border: 1px solid $lightgrey
 
+/* Header Styles */
 header
   margin: 0
-  padding: ($font-size / 4) ($font-size / 2)
+  padding: 5px 10px
   background: $black
   color: $white
-  font-family: $serif
+  font-family: $sans-serif
 
   h1
-    font-family: $sans-serif
     font-size: 1.5em
     margin: 0
-    padding: 0
 
   a
     color: inherit
@@ -47,19 +50,23 @@ header
     &:hover
       text-decoration: underline
 
-#jsNotice
+/* JavaScript Notice */
+.notice
   font-family: $sans-serif
   font-size: 0.9em
-  padding: ($font-size / 4) ($font-size / 2)
+  padding: 5px 10px
   background: $red
-  font-weight: bold
   color: $white
-  text-align: center
+  font-weight: bold
   border-radius: 5px
+  width: fit-content
+  margin: 20px auto
+  text-align: center
 
+/* Article Styles */
 #article
   h1, h2, h3
-    margin: $font-size 0
+    margin: 20px 0
     font-family: $sans-serif
 
   h1
@@ -72,14 +79,14 @@ header
     font-size: 1em
 
   p
-    margin: $font-size 0
     word-break: break-word
     hyphens: auto
 
   a
     color: $blue
 
-  img
+  img, video
+    margin: 0 auto
     display: block
     max-width: 100%
     max-height: 360px
@@ -108,7 +115,7 @@ header
 
   pre code
     display: block
-    padding: ($font-size / 4) ($font-size / 2)
+    padding: 5px 10px
     overflow-x: auto
 
   details
@@ -124,9 +131,10 @@ header
   .footnotes
     font-size: 0.8em
 
+/* Search Input Styles */
 #searchInput
-  margin: $font-size auto
-  padding: $font-size / 2
+  margin: 20px auto
+  padding: 10px
   font-size: 0.8em
   border: 2px solid $lightgrey
   border-radius: 5px
@@ -137,9 +145,10 @@ header
     outline: none
     border-color: $blue
 
+/* Post Index Styles */
 #postIndex
   list-style: none
-  margin: 0 $font-size
+  margin: 0 20px
   padding: 0
   column-count: 2
   column-gap: 20px
@@ -168,9 +177,8 @@ header
     &:hover
       text-decoration: underline
 
-
   .title
-    margin: ($font-size / 4) ($font-size / 2)
+    margin: 5px 10px
 
   .keywords
     display: none
@@ -178,17 +186,34 @@ header
   .description
     display: none
 
+/* Footer Styles */
 footer
   color: $darkgrey
   font-family: $sans-serif
   font-size: 0.7em
   text-align: center
 
+/* Media Query for Small Screens */
 @media screen and (max-width: 760px)
   body
-    font-size: ($font-size * 0.9)
+    font-size: 18px
   #postIndex
     column-count: 1
     margin: 0
     li
       margin-bottom: 10px
+
+/* Media Query for Printing */
+@media print
+  body
+    font-size: 11pt
+    color: black
+    background: transparent
+    margin: 1.6em;
+
+  header, footer, .notice
+    display: none
+
+  #article
+    pre code
+      overflow-x: hidden
