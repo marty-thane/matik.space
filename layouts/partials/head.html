@@ -14,7 +14,12 @@
 	{{ with resources.Get "sass/main.sass" | toCSS (dict "targetPath" "css/style.css")}}
 		<link rel="stylesheet" href="{{ .Permalink }}">
 	{{ end }}
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+	{{ if .Params.with_mathjax }}
+		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+	{{ end }}
+	{{ if .Params.with_p5 }}
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js" type="text/javascript"></script>
+	{{ end }}
 	<title>
 		{{ if .IsHome }}
 			{{ .Site.Title }}
