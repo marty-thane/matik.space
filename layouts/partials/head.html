@@ -24,7 +24,7 @@
 		{{ if .IsHome }}
 			{{ .Site.Title }}
 		{{ else }}
-			{{ .Title }} &ndash; {{ .Site.Title }}
+			{{ .Title }} &ndash; {{ .Site.Params.shortTitle }}
 		{{ end }}
 	</title>
 </head>

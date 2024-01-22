@@ -5,6 +5,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "404", "RSS"]
 titleCaseStyle = "firstupper"
 
 [params]
+  shortTitle = "Matik"
   author = "Martin Zeman"
 
 [module]
