@@ -1,11 +1,11 @@
 baseURL = "https://matik.space/"
-title = "matik.space"
+title = "Matik"
 languageCode = "cs"
 disableKinds = ["taxonomy", "taxonomyTerm", "404", "RSS"]
 titleCaseStyle = "firstupper"
 
 [params]
-  shortTitle = "Matik"
+  domain = "matik.space"
   author = "Martin Zeman"
 
 [module]
