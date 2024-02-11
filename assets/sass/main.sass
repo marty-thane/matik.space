@@ -206,7 +206,7 @@ footer
 /* Media Query for Printing */
 @media print
   body
-    font-size: 12pt
+    font-size: 11pt
     color: black
     background: transparent
     margin: 1.6em;
@@ -215,6 +215,12 @@ footer
     display: none
 
   #article
+    p
+      text-align: justify
+      orphans: 3
+      widows: 3
+    h2, h3
+      page-break-after: avoid
     img, video
       max-height: 180pt
     pre code

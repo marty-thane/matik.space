@@ -7,7 +7,7 @@
 		{{ range sort .Pages "Date" "desc" }}
 		<li>
 			<a href="{{ .Permalink }}">
-				<img src="{{ .Permalink}}thumb.png" alt="{{ .LinkTitle }} &ndash;">
+				<img src="{{ .Permalink}}thumb.webp" alt="náhled">
 					<p class="title">{{ .LinkTitle }}</p>
 					{{ with .Keywords }}
 						<p class="keywords">{{ delimit . ", " }}</p>
