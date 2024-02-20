@@ -1,9 +1,9 @@
 ---
 title: Jazykové modely
 date: 2024-02-11T20:03:15+01:00
-description: ""
-keywords: [ "ai", "llm", "gpt", "jazyk", "umela inteligence" ]
-draft: false
+description: "Účelem tohoto dokumentu je vybudovat ve čtenáři intuitivní představu o jazykových modelech a nabídnout praktické zásady pro práci s nimi."
+keywords: [ "umělá inteligence", "velké jazykové modely", "chatgpt", "ai" ]
+draft: true
 ---
 
 ## Úvod
@@ -53,11 +53,11 @@ Doplňte naposled na vynechané místo:
 
 $$\text{KDO JE NEJLEPŠÍM PŘÍTELEM ČLOVĚKA? \colorbox{yellow}{...}}$$
 
-Právě se stalo něco zajímavého. Předchozí vstupy měly všechny oznamovací charakter, tento je však větou větou tázací. Jazykové modely s nimi zachází jako s každým jiným vstupem -- ptají se, jak *pravděpodobně* bude daná posloupnost slov pokračovat. Na otázku, kdo je nejlepším přítelem člověka, odpovíme asi všichni stejně. Přesto ale vycházíme spíše z ustáleného výrazu než ze skutečnosti -- očekáváme, že &bdquo;pes&ldquo; a &bdquo;nejlepší přítel člověka&ldquo; se v textu budou objevovat pospolu, považujeme to za *pravděpodobné*. Přesně s touto pravděpodobností jazykové modely pracují.
+Právě se stalo něco zajímavého. Na rozdíl od všech předchozích vstupů byl tento větou tázací. Jazykové modely s nimi zachází jako s každým jiným vstupem -- ptají se, jak *pravděpodobně* bude daná posloupnost slov pokračovat. Na otázku, kdo je nejlepším přítelem člověka, odpovíme asi všichni stejně. Přesto ale vycházíme spíše z ustáleného výrazu než ze skutečnosti -- očekáváme, že &bdquo;pes&ldquo; a &bdquo;nejlepší přítel člověka&ldquo; se v textu budou objevovat pospolu, považujeme to za *pravděpodobné*. Přesně s touto pravděpodobností jazykové modely pracují.
 
-## Úskalí
+## Nedostatky
 
-Jak jsme demonstrovali výše, jazykové modely jsou schopné generovat libovolně dlouhé texty a odpovídat uživateli na otázky. Můžeme s nimi vést konverzaci, klást jim dotazy, zadávat úlohy -- toto vše lze zredukovat na problém předpovědi následujícího slova. Jak už to ale bývá, nic na světě není dokonalé, a i jazykové modely mají své nedostatky. Odpovězte na následující otázku:
+Jak jsme demonstrovali výše, jazykové modely jsou schopné generovat libovolně dlouhé texty a odpovídat uživateli na otázky. Můžeme s nimi vést konverzaci, klást jim dotazy, zadávat úlohy -- toto vše lze zredukovat na problém předpovědi následujícího slova. Jazykové modely ale v žádném případě nejsou dokonalé. Odpovězte na následující otázku:
 
 $$\text{PATŘÍ SÝKORA KOMINÍČEK MEZI PĚVCE?}$$
 
@@ -74,22 +74,6 @@ Dle názoru i zkušenosti autora mají jazykové modely své uplatnění; při j
 1. zadaný úkon musí být lingvistickou operací;
 2. úkon nesmí vyžadovat žádné externí znalosti.
 
-<!--
-- **Výzkum**: Dle zkušenosti autora mají lidé tendenci zacházet s jazykovými modely jako s internetovými vyhledávači, což je samozřejmě špatně. Není splněna druhá podmínka -- požadujeme přístup k informacím, které nejsou vyjádřeny vztahy mezi pojmy, tedy spadají mimo doménu jazykových modelů. Uživatel proto nutně dostává jako výstup nepravdy a kontradikce, např. při dotazu na seznam napětí na dvaceti-pinovém ATX konektoru vypíše model seznam o osmnácti položkách(!)
-- **Matematika**: Chtít po jazykovém modelu počty je špatný nápad. Krom toho, že počítání není jazykovou operací (není splněna první podmínka), vyplývá to také z deterministické povahy počtů. Čtyři krát pět se rovná dvacet a bude se *vždycky* rovnat dvaceti; jazykové modely ale, jak jsme již mnohokrát řekli, pracují s pravděpodobností, tedy na otázku, kolik je čtyři krát pět, mohou odpovědět jen, že je to *pravděpodobně* dvacet, tedy je zde prostor pro chybu, který je často kamenem úrazu.
-- **Vzdělávání**: Školství bylo jednou z oblastí, kterými rozšíření jazykových modelů otřáslo nejvíce. Reakcí na strach, že AI připraví spoustu lidí o práci, byla silná vůle přijmout novou technologii a plně ji integrovat do současného systému. Padaly například návrhy, aby učitelé používáali jazykové modely pro tvorbu testů a studenti pro pomoc s učením. Toto je opět špatně, není splněna druhá podmínka.
+Uvažujme učitele češtiny, který chce použít jazykový model k tvorbě písemného testu. Úkol zadá modelu takto: *&bdquo;vytvoř písemnou práci na téma romantismus&ldquo;*. Co udělal špatně? Úkon vyžaduje znalosti, ke kterým model nemá přístup -- druhá podmínka proto není splněna. Situaci lze vyřešit tak, že modelu poskytneme vedle zadání také materiály, ze kterých má při tvorbě testu vyjít. Úkol by potom zněl: *&bdquo;vytvoř písemný test na základě přiložených materiálů&ldquo;*.
 
-Jazykové modely není třeba pro tyto úkony hned zavrhovat; místo prostého &bdquo;vytvoř písemný test na téma romantismus&ldquo; může zkoušející poskytnout materiály nebo poznámky, ze kterých potom 
--->
-
-<!--
-ve vzdelavani:
-- tvorba testu -- nutne poskytnout materialy, prikad s romantismem
-- psani eseji -- pouze prepisovat
-- vysvetlovani -- vzdy zkontrolovat!
-- matematika -- nepouzivat, problem s pravdepodobnosti
--->
-
-## Shrnutí
-
-
+Uvažujme žáka, který chce využít jazykový model pro vypracování domácího úkolu z matematiky. Existují dva důvody, proč je toto špatně. Kromě toho, že počty nejsou jazykovou operací (první podmínka není splněna), vyplývá to také z deterministické povahy počtů. Čtyři krát pět se rovná dvacet a bude se *vždycky* rovnat dvaceti; jazykové modely ale, jak jsme již mnohokrát řekli, pracují s pravděpodobností. Na otázku, kolik je čtyři krát pět, mohou odpovědět jen, že je to *pravděpodobně* dvacet, tedy je zde prostor pro chybu. Pro řešení takovýchto problémů je proto lepší využít vhodný matematický software.
