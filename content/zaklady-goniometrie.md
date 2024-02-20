@@ -2,7 +2,7 @@
 title: Základy goniometrie
 date: 2024-02-08T23:20:52+01:00
 description: ""
-keywords: ["", "", "", "", ""]
+keywords: [ "", "", "" ]
 draft: true
 ---
 
