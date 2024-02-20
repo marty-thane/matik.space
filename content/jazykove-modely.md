@@ -2,7 +2,7 @@
 title: Jazykové modely
 date: 2024-02-11T20:03:15+01:00
 description: ""
-keywords: [ "", "", "" ]
+keywords: [ "ai", "llm", "gpt", "jazyk", "umela inteligence" ]
 draft: false
 ---
 
