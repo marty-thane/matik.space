@@ -3,7 +3,7 @@ title: Jazykové modely
 date: 2024-02-11T20:03:15+01:00
 description: "Účelem tohoto dokumentu je vybudovat ve čtenáři intuitivní představu o jazykových modelech a nabídnout praktické zásady pro práci s nimi."
 keywords: [ "umělá inteligence", "velké jazykové modely", "chatgpt", "ai" ]
-draft: false
+draft: true
 ---
 
 <!-- refactor, hard spaces -->
