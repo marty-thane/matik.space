@@ -15,40 +15,44 @@ Mějme kružnici o poloměru $r = 1$ a středem $S$ v počátku soustavy souřad
 Víme, že celá kružnice má obvod $2\pi$, tedy platí následující vztah:
 
 $$ 360^\circ = 2\pi$$
-$$ 180^\circ = \pi$$
+
+
+$$ 1^\circ = \frac{2\pi}{360}$$
+$$ 1^\circ = \frac{\pi}{180}$$
+
+Obdobně můžeme vyjádřit pro druhou, námi zatím nepojmenovanou jednotku:
+
+$$ \frac{360}{2\pi} = 1$$
+$$ \frac{180}{\pi} = 1$$
 
 ## Sinus a cosinus
 
 Jelikož se pohybujeme v kartézské soustavě souřadnic, každý bod v této soustavě, a tedy i náš bod $P$, má svoji $x$-ovou a $y$-ovou souřadnici. Zavedeme si proto dvě funkce, které nám dovolí se na tyto souřadnice dotazovat:
 
-$$\cos{\theta} = x$$
-$$\sin{\theta} = y$$
+$$\sin{\theta} = P_y$$
+$$\cos{\theta} = P_x$$
+
+První funkci nazýváme **sinus**, druhou **cosinus**. Ptáme se: jaká je $y$-ová souřadnice bodu $P$ daného úhlem $\theta$? Jaká je $x$-ova?
 
 ## Tangens
 
-Mimo stupňovou a obloukovou míru existuje ještě jeden způsob, jak vyjádřit úhel. Představme si přímku, jež je dána předpisem $y = 3x + 2$. Její sklon můžeme vyjádřit jako změnu funkční hodnoty v závislosti na změně funkční proměnné. Takto vyjádřený úhel nazýváme směrnicí.
+Mimo stupňovou a obloukovou míru existuje ještě jeden způsob, jak vyjádřit úhel. Představme si přímku, jež je dána předpisem $y = 3x + 2$.
 
-$$\frac{\Delta y}{\Delta x}$$
+![Přímka daná předpisem](line.webp)
 
-My víme, že funkce $\sin{\theta}$ nám dává $y$-ový posun, tedy $\Delta y$, a obdobně $\cos{\theta}$ zase posun $x$-ový, tedy $\Delta x$. Můžeme tedy do vztahu dosadit následovně:
+<!-- tady tabulka hodnot -->
 
-$$\frac{\sin{\theta}}{\cos{\theta}}$$
+Dosazováním zjistíme, že pokud se $x$ změní o jedna, potom se $y$ změní o tři. Sklon přímky lze vyjádřit právě touto změnou; toto vyjádření nazýváme **směrnicí**. Obecně platí:
+
+$$s = \frac{\Delta y}{\Delta x}$$
+
+Víme, že funkce $\sin{\theta}$ nám dává $y$-ový posun a obdobně $\cos{\theta}$ zase posun $x$-ový. Do vztahu proto můžeme dosadit:
+
+$$s = \frac{\sin{\theta}}{\cos{\theta}}$$
 
 Tento zápis má tu výhodu, že nám dovoluje vyjádřit směrnici čistě vzhledem k úhlu $\theta$. Zavedeme si proto novou funkci, jež nazýváme tangens, která nám tuto směrnici vzhledem k $\theta$ dává:
 
 $$\tan{\theta} = \frac{\sin{\theta}}{\cos{\theta}}$$
-
-<!--
-Tato funkce je zajímavá v tom, že není definovaná v $\frac{\pi}{2} + k\pi; k \belongs \wholenumbers$. Existují různé způsoby, jak chápat toto omezení. Můžeme si například zkusit dosadit:
-
-$$\tan{\frac{\pi}{2}} = \frac{\sin{\frac{\pi}{2}}}{\cos{\frac{\pi}{2}}} = \frac{1}{0}$$
-
-Nulou dělit nelze, tedy funkce $\tan{\theta}$ není definovaná tam, kde je $\cos{\theta} = 0$. Můžeme se ale také zamyslet nad tím, co nám směrnice vlastně *říká*; je to vidět z následujícího vztahu:
-
-$$\frac{y}{x} = \frac{\frac{y}{x}}{\frac{x}{x}} = \frac{\frac{y}{x}}{1}
-
-Vidíme, že v čitateli dostáváme číslo (je jedno jaké) a ve jmenovateli dostáváme jedničku; směrnici nám tedy říká změnu $\Delta y$ za *jednotku* vstupní proměnné.
--->
 
 ## Pravoúhlý trojúhelník
 
@@ -56,15 +60,24 @@ Až do této chvíle jsme budovali goniometrii jen v rámci jednotkové kružnic
 
 Ačkoli to není zřejmé, otázky o bodu $P$ můžeme přeformulovat právě jako otázky o pravoúhlém trojúhelníku. Velikost protilehlé odvěsny tohoto trojúhelníka vzhledem k $\theta$ odpovídá $y$-ovému posunu bodu $P$, velikost přilehlé odvěsny zase posunu $x$-ovému. Velikost přepony je dána poloměrem kružnice. Pro lepší představu poslouží graf:
 
-$$a = y$$
-$$b = x$$
+![Demonstrace převedení vektoru na trojúhelník](tri.gif)
+
+Pro trojúhelník platí následující vztahy:
+
+$$a = P_y$$
+$$b = P_x$$
 $$c = 1$$
 
-Můžeme tedy říct, že naše goniometrie je platná pro všechny pravoúhlé trojúhelníky, které mají přeponu $c = 1$. Takových trojúhelníků ale moc není.
+Můžeme tedy říct, že naše goniometrie je platná pro všechny pravoúhlé trojúhelníky, které mají přeponu $c = 1$. Takových trojúhelníků ale moc není. Na druhou stranu víme, že trojúhelník není dán ani tak délkou stran jako *poměry* mezi nimi; pronásobením jednotlivých stran libovolným číslem trojúhelník škálujeme, aniž bychom změnili jeho tvar. Naším úmyslem je získat trojúhelník s $c = 1$; toho docílíme tak, že jednotlivé strany podělíme právě délkou přepony. Pro libovolný trojúhelník tedy platí:
+
+$$\sin{\theta} = \frac{a}{c}$$
+$$\cos{\theta} = \frac{b}{c}$$
+
+Zde vidíme onu středoškolskou mantru: sinus je definován jako *protilehlá ku přeponě*, cosinus jako *přilehlá ku přeponě*. Trojúhelník, ve kterém chceme provádět výpočty, nejdříve podělením &bdquo;vměstnáme&ldquo; do jednotkové kružnice a poté pracujeme tak, jak jsme si již ukázali.
 
 ## Arcus
 
-Na závěr ještě zmíníme funkce, které jsou inverzní k funkcím goniometrickým a nazývají se cyklometrické.
+
 
 ## Příklad
 
