@@ -3,8 +3,10 @@ title: Jazykové modely
 date: 2024-02-11T20:03:15+01:00
 description: "Účelem tohoto dokumentu je vybudovat ve čtenáři intuitivní představu o jazykových modelech a nabídnout praktické zásady pro práci s nimi."
 keywords: [ "umělá inteligence", "velké jazykové modely", "chatgpt", "ai" ]
-draft: true
+draft: false
 ---
+
+<!-- refactor, hard spaces -->
 
 ## Úvod
 
@@ -74,6 +76,6 @@ Dle názoru i zkušenosti autora mají jazykové modely své uplatnění; při j
 1. zadaný úkon musí být lingvistickou operací;
 2. úkon nesmí vyžadovat žádné externí znalosti.
 
-Uvažujme učitele češtiny, který chce použít jazykový model k tvorbě písemného testu. Úkol zadá modelu takto: *&bdquo;vytvoř písemnou práci na téma romantismus&ldquo;*. Co udělal špatně? Úkon vyžaduje znalosti, ke kterým model nemá přístup -- druhá podmínka proto není splněna. Situaci lze vyřešit tak, že modelu poskytneme vedle zadání také materiály, ze kterých má při tvorbě testu vyjít. Úkol by potom zněl: *&bdquo;vytvoř písemný test na základě přiložených materiálů&ldquo;*.
+Uvažujme učitele češtiny, který chce použít jazykový model k tvorbě písemného testu. Úkol zadá modelu takto: *&bdquo;vytvoř písemnou práci na téma romantismus&ldquo;*. Co udělal špatně? Úkon vyžaduje znalosti, ke kterým model nemá přístup -- druhá podmínka proto není splněna. Situaci lze vyřešit tak, že modelu poskytneme vedle zadání také materiály, ze kterých má při tvorbě testu vyjít. Úkol by potom zněl: *&bdquo;vytvoř písemný test na základě přiložených materiálů&ldquo;*. Toto generuje podstatně lepší výsledky.
 
-Uvažujme žáka, který chce využít jazykový model pro vypracování domácího úkolu z matematiky. Existují dva důvody, proč je toto špatně. Kromě toho, že počty nejsou jazykovou operací (první podmínka není splněna), vyplývá to také z deterministické povahy počtů. Čtyři krát pět se rovná dvacet a bude se *vždycky* rovnat dvaceti; jazykové modely ale, jak jsme již mnohokrát řekli, pracují s pravděpodobností. Na otázku, kolik je čtyři krát pět, mohou odpovědět jen, že je to *pravděpodobně* dvacet, tedy je zde prostor pro chybu. Pro řešení takovýchto problémů je proto lepší využít vhodný matematický software.
+Uvažujme žáka, který chce využít jazykový model pro vypracování domácího úkolu z matematiky. Existují dva důvody, proč je toto špatně. Kromě toho, že počty nejsou jazykovou operací (první podmínka není splněna), vyplývá to také z deterministické povahy počtů. Čtyři krát pět se rovná dvacet a bude se *vždycky* rovnat dvaceti; jazykové modely ale, jak jsme již mnohokrát řekli, pracují s pravděpodobností. Na otázku, kolik je čtyři krát pět, mohou odpovědět jen, že je to *pravděpodobně* dvacet, tedy je zde prostor pro chybu. Pro řešení takovýchto problémů je proto lepší využít  vhodný matematický software (např. [WolframAlpha](https://www.wolframalpha.com/)).
