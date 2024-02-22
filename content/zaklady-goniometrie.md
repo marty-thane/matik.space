@@ -10,12 +10,15 @@ draft: true
 
 Mějme kružnici o poloměru $r = 1$ a středem $S$ v počátku soustavy souřadnic.
 
+Goniometrii můžeme chápat jako kladení si otázek o tomto bodě.
+
 ## Oblouková míra
 
 Víme, že celá kružnice má obvod $2\pi$, tedy platí následující vztah:
 
 $$ 360^\circ = 2\pi$$
 
+Jednou z možností je teď vyjádřit pro jednotku stupně:
 
 $$ 1^\circ = \frac{2\pi}{360}$$
 $$ 1^\circ = \frac{\pi}{180}$$
@@ -29,10 +32,10 @@ $$ \frac{180}{\pi} = 1$$
 
 Jelikož se pohybujeme v kartézské soustavě souřadnic, každý bod v této soustavě, a tedy i náš bod $P$, má svoji $x$-ovou a $y$-ovou souřadnici. Zavedeme si proto dvě funkce, které nám dovolí se na tyto souřadnice dotazovat:
 
-$$\sin{\theta} = P_y$$
-$$\cos{\theta} = P_x$$
+$$\sin{\theta} = y$$
+$$\cos{\theta} = x$$
 
-První funkci nazýváme **sinus**, druhou **cosinus**. Ptáme se: jaká je $y$-ová souřadnice bodu $P$ daného úhlem $\theta$? Jaká je $x$-ova?
+První funkci nazýváme **sinus**, druhou **cosinus**. Ptáme se: Jaká je $y$-ová souřadnice bodu $P$ daného úhlem $\theta$? Jaká je $x$-ova?
 
 ## Tangens
 
@@ -42,15 +45,15 @@ Mimo stupňovou a obloukovou míru existuje ještě jeden způsob, jak vyjádři
 
 <!-- tady tabulka hodnot -->
 
-Dosazováním zjistíme, že pokud se $x$ změní o jedna, potom se $y$ změní o tři. Sklon přímky lze vyjádřit právě touto změnou; toto vyjádření nazýváme **směrnicí**. Obecně platí:
+Dosazováním zjistíme, že pokud se $x$ změní o jedna, potom se $y$ změní o tři. Sklon přímky takto vyjádřený nazýváme **směrnicí**. Obecně platí:
 
 $$s = \frac{\Delta y}{\Delta x}$$
 
-Víme, že funkce $\sin{\theta}$ nám dává $y$-ový posun a obdobně $\cos{\theta}$ zase posun $x$-ový. Do vztahu proto můžeme dosadit:
+Víme, že funkce $\sin{\theta}$ nám dává $y$-ový posun a $\cos{\theta}$ zase posun $x$-ový. Do vztahu proto můžeme dosadit:
 
 $$s = \frac{\sin{\theta}}{\cos{\theta}}$$
 
-Tento zápis má tu výhodu, že nám dovoluje vyjádřit směrnici čistě vzhledem k úhlu $\theta$. Zavedeme si proto novou funkci, jež nazýváme tangens, která nám tuto směrnici vzhledem k $\theta$ dává:
+Tento zápis má tu výhodu, že nám dovoluje vyjádřit směrnici čistě vzhledem k úhlu $\theta$. Zavedeme si proto novou funkci, jež nazýváme **tangens**, která nám tuto směrnici vzhledem k $\theta$ dává:
 
 $$\tan{\theta} = \frac{\sin{\theta}}{\cos{\theta}}$$
 
@@ -60,15 +63,15 @@ Až do této chvíle jsme budovali goniometrii jen v rámci jednotkové kružnic
 
 Ačkoli to není zřejmé, otázky o bodu $P$ můžeme přeformulovat právě jako otázky o pravoúhlém trojúhelníku. Velikost protilehlé odvěsny tohoto trojúhelníka vzhledem k $\theta$ odpovídá $y$-ovému posunu bodu $P$, velikost přilehlé odvěsny zase posunu $x$-ovému. Velikost přepony je dána poloměrem kružnice. Pro lepší představu poslouží graf:
 
-![Demonstrace převedení vektoru na trojúhelník](tri.gif)
+![Demonstrace převedení bodu na trojúhelník](tri.gif)
 
 Pro trojúhelník platí následující vztahy:
 
-$$a = P_y$$
-$$b = P_x$$
+$$a = y$$
+$$b = x$$
 $$c = 1$$
 
-Můžeme tedy říct, že naše goniometrie je platná pro všechny pravoúhlé trojúhelníky, které mají přeponu $c = 1$. Takových trojúhelníků ale moc není. Na druhou stranu víme, že trojúhelník není dán ani tak délkou stran jako *poměry* mezi nimi; pronásobením jednotlivých stran libovolným číslem trojúhelník škálujeme, aniž bychom změnili jeho tvar. Naším úmyslem je získat trojúhelník s $c = 1$; toho docílíme tak, že jednotlivé strany podělíme právě délkou přepony. Pro libovolný trojúhelník tedy platí:
+Můžeme tedy říct, že naše goniometrie je platná pro všechny pravoúhlé trojúhelníky, které mají přeponu $c = 1$. Takových trojúhelníků ale moc není. Na druhou stranu víme, že trojúhelník není dán ani tak délkou stran jako *poměry* mezi nimi; pronásobením jednotlivých stran libovolným číslem můžeme trojúhelník škálovat, aniž bychom změnili jeho tvar. Naším úmyslem je získat trojúhelník s $c = 1$; toho docílíme tak, že jednotlivé strany podělíme právě délkou přepony. Pro libovolný trojúhelník tedy platí:
 
 $$\sin{\theta} = \frac{a}{c}$$
 $$\cos{\theta} = \frac{b}{c}$$
@@ -78,7 +81,3 @@ Zde vidíme onu středoškolskou mantru: sinus je definován jako *protilehlá k
 ## Arcus
 
 
-
-## Příklad
-
-Vektor svírající úhel blabla o délce blabal, urči jeho souřadnice.
