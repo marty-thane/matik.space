@@ -2,4 +2,4 @@
 
 # Inserts non-breakable spaces after one-letter words.
 
-sed -i 's/\b\([[:alpha:]]\)\b/\1\&nbsp;/g' $1
+sed -i -e 's/\b\([[:alpha:]]\)\b/\1\&nbsp;/g' -e 's/&nbsp; /&nbsp;/g' $1
