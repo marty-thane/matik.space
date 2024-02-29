@@ -8,50 +8,38 @@ draft: true
 
 ## Jednotková kružnice
 
-Mějme kružnici o poloměru $r = 1$ a středem $S$ v počátku soustavy souřadnic. Mějme dále bod $P$, jenž náleží této kružnici a jeho poloha je dána úhlem $\theta$, který svírá jeho přůvodič s kladnou částí osy $x$. Goniometrii můžeme chápat jako kladení si otázek o tomto bodě.
+Mějme kružnici o poloměru $r = 1$ a středem $S$ v počátku soustavy souřadnic. Tento útvar nazýváme **jednotkovou kružnicí**. Mějme dále bod $M$, jenž náleží této kružnici a jeho poloha je dána úhlem $\theta$, který svírá jeho průvodič s kladnou částí osy $x$. Goniometrii můžeme chápat jako kladení si otázek o tomto bodě.
 
 ## Oblouková míra
 
-Úhel $\theta$ nám v útvaru tvoří kruhovou výseč. Jaká je délka této výseče? Víme, že celá kružnice má obvod $2\pi$, tedy platí následující vztah:
+Úhel $\theta$ nám v kružnici tvoří její výseč. Jaká je délka této výseče? Víme, že obvod celé kružnice je $2\pi$, tedy platí následující vztah:
 
-$$ 360^\circ = 2\pi$$
+$$360^\circ = 2\pi$$
+
+Mezi úhlem ve stupních a délkou výseče existuje lineární závislost ($180^\circ = \pi$, $90^\circ = \frac{pi}{2} atd.). nic nám proto nebrání vyjádřit úhel přímo pomocí této délky. Pro takového vyjádření zavádíme pojem **oblouková míra**, jejíž jednotkou jsou **radiány**.
+
+Při převodu mezi obloukovou a stupňovou mírou postupujeme tak, že si nejdříve průvodič v kružnici &ldquo;nastavíme&ldquo; na daný úhel a poté odvozujeme vyjádření. Vycházíme přitom stále ze zmíněného vztahu.
+
+{{< details label="Převeď" summary="$45^\circ$ na radiány, $\pi / 3 \text{rad}$ na stupně." >}}
+
+Úhel $45^\circ$ odpovídá osmině plného úhlu, protože $\frac{360}{45} = 8$. Pokud $2\pi \text{rad}$ odpovídá celému oblouku, potom osmina z něj je $\frac{2\pi}{8} = \frac{\pi}{4} \text{rad}$, což je řešením.
+
+Úhel $\pi / 3 \text{rad}$ odpovídá šestině celého oblouku, protože $\frac{2\pi}{\frac{\pi}{3}} = 6$. Pokud $360^\circ$ odpovídá plnému úhlu, potom šestina z něj je $\frac{360}{6} = 60^\circ$, což je řešením.
+
+{{< /details>}}
 
 ## Sinus a cosinus
 
-Jelikož se pohybujeme v kartézské soustavě souřadnic, každý bod v této soustavě, a tedy i náš bod $P$, má svoji $x$-ovou a $y$-ovou souřadnici. Zavedeme si proto dvě funkce, které nám dovolí se na tyto souřadnice dotazovat:
+Jelikož se pohybujeme v kartézské soustavě souřadnic, každý bod v této soustavě, a tedy i náš bod $M$, má svoji $x$-ovou a $y$-ovou souřadnici. Zavedeme si proto dvě funkce, které nám dovolí se na tyto souřadnice dotazovat.
 
-$$\cos{\theta} = x$$
+První funkcí je **sinus**. Ptáme se: Jaká je $y$-ová souřadnice bodu daného úhlem $\theta$?
+
 $$\sin{\theta} = y$$
 
-První funkci nazýváme **cosinus**, druhou **sinus**. Ptáme se: Jaká je $y$-ová souřadnice bodu $P$ daného úhlem $\theta$? Jaká je $x$-ová?
+Druhou funkcí je **cosinus**. Obdobně: Jaká je $x$-ová souřadnice bodu daného úhlem $\theta$?
 
-## Tangens
+$$\cos{\theta} = x$$
 
-Mimo stupňovou a obloukovou míru existuje ještě jeden způsob, jak vyjádřit úhel.
+Obě funkce jsou omezené na interval $<-1; 1>$ (bod $M$ se nemůže naskytnout mimo kružnici) a periodické (při zvětšování $\theta$ bod $M$ &bdquo;obchází&ldquo; kružnici kolem dokola).
 
-$$s = \frac{\Delta y}{\Delta x}$$
-
-Víme, že funkce $\sin{\theta}$ nám dává $y$-ový posun a $\cos{\theta}$ zase posun $x$-ový. Do vztahu proto můžeme dosadit:
-
-$$s = \frac{\sin{\theta}}{\cos{\theta}}$$
-
-Tento zápis má tu výhodu, že nám dovoluje vyjádřit směrnici čistě vzhledem k úhlu $\theta$. Zavedeme si proto novou funkci, jež nazýváme **tangens**, která nám tuto směrnici vzhledem k $\theta$ dává:
-
-$$\tan{\theta} = \frac{\sin{\theta}}{\cos{\theta}}$$
-
-## Pravoúhlý trojúhelník
-
-Až do této chvíle jsme budovali goniometrii jen v rámci jednotkové kružnice. Čtenář ale možná ví, že její nejčastější aplikací jsou výpočty v pravoúhlém trojúhelníku. Naším úkolem teď proto bude dosud získané znalosti patřičně zobecnit.
-
-Ačkoli to není zřejmé, otázky o bodu $P$ můžeme přeformulovat právě jako otázky o pravoúhlém trojúhelníku. Velikost protilehlé odvěsny tohoto trojúhelníka vzhledem k $\theta$ odpovídá $y$-ovému posunu bodu $P$, velikost přilehlé odvěsny zase posunu $x$-ovému. Velikost přepony je dána poloměrem kružnice. Pro lepší představu poslouží graf:
-
-Můžeme tedy říct, že naše goniometrie je platná pro všechny pravoúhlé trojúhelníky, které mají přeponu $c = 1$. Takových trojúhelníků ale moc není. Na druhou stranu víme, že trojúhelník není dán ani tak délkou stran jako *poměry* mezi nimi; pronásobením jednotlivých stran libovolným číslem můžeme trojúhelník škálovat, aniž bychom změnili jeho tvar. Naším úmyslem je získat trojúhelník s $c = 1$; toho docílíme tak, že jednotlivé strany podělíme právě délkou přepony. Pro libovolný trojúhelník tedy platí:
-
-$$\sin{\theta} = \frac{a}{c}$$
-$$\cos{\theta} = \frac{b}{c}$$
-
-Zde vidíme onu středoškolskou mantru: sinus je definován jako *protilehlá ku přeponě*, cosinus jako *přilehlá ku přeponě*. Trojúhelník, ve kterém chceme provádět výpočty, nejdříve podělením &bdquo;vměstnáme&ldquo; do jednotkové kružnice a poté pracujeme tak, jak jsme si již ukázali.
-
-## Arcus
-
-
+<!-- tady bude cvicční -->
