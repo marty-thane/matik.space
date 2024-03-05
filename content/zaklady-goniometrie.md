@@ -3,7 +3,7 @@ title: Základy goniometrie
 date: 2024-02-08T23:20:52+01:00
 description: "Výstavba goniometrie pomocí jednotkové kružnice a její postupné zobecnění na pravoúhlé trojúhelníky."
 keywords: [ "sinus", "cosinus", "tangens", "pravoúhlý trojúhelník", "jednotková kružnice", "radiány" ]
-draft: false
+draft: true
 ---
 
 ## Jednotková kružnice
