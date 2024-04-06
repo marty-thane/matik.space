@@ -44,7 +44,7 @@ První funkci nazýváme **sinus**, druhou **cosinus**. Ptáme se: Jaká je $y$-
 
 ## Tangens
 
-Kromě stupňové a obloukové míry existuje ještě jeden způsob, jak vyjádřit úhel. Představme si přímku danou předpisem $y = 3x + 2$. dosazováním zjistíme, že pokud se $x$ změní o jedna, potom se $y$ změní o tři:
+Kromě stupňové a obloukové míry existuje ještě jeden způsob, jak vyjádřit úhel. Představme si přímku danou předpisem $y = 3x + 2$. Dosazováním zjistíme, že pokud se $x$ změní o jedna, potom se $y$ změní o tři:
 
 | $x$ | $0$ | $1$ | $2$ | $3$ |
 |-----|-----|-----|-----|-----|
@@ -74,5 +74,31 @@ Ze zadání je vidět, že pokud se $x$ změní o tři, potom se $y$ změní o m
 {{< /details>}}
 
 ## Pravoúhlý trojúhelník
+    <!-- tohle prekontrolovat a prepsat -->
 
-Až doteď jsme budovali naši goniometrii jen v rámci jednotkové kružnice. Jednou z jejích nejčastějších aplikací jsou ale výpočty v pravoúhlém trojúhelníku. Naše dosavadní poznatky je proto potřeba patřičně zobecnit.
+Až doteď jsme budovali naši goniometrii jen v rámci jednotkové kružnice. Jednou z nejčastějších aplikací jsou ale výpočty v pravoúhlém trojúhelníku. Naše dosavadní poznatky je proto potřeba patřičně zobecnit.
+
+Ačkoli to není zřejmé, otázky o bodu $M$ můžeme přeformulovat právě jako otázky o pravoúhlém trojúhelníku. Pokud pojmenujeme trojúhelník $ABC$, pak platí následující:
+
+- $A = [0;0]$
+- $C = M$
+- $b = M_x = \cos{\theta}$
+- $a = M_y = \sin{\theta}$
+- $c = 1$
+
+Naše goniometrie je tedy platná pro všechny pravoúhlé trojúhelníky s přeponou o délce jedna. Takových trojúhelníků ale moc není. Trojúhelníky naštěstí nejsou určeny ani tak velikostmi svých stran jako *poměry* mezi nimi; násobením (resp. dělením) stran stejným číslem se tyto poměry nezmění, trojúhelník proto můžeme libovolně &bdquo;škálovat&ldquo;, aniž bychom ho nějak zkomolili.
+
+Jak jsme již řekli, při používání goniometrických funkcí jsme omezeni podmínkou $c = 1$. Pokud podělíme strany délkou přepony, dostáváme následující:
+
+$$\frac{a}{c} = sin{\theta}$
+$$\frac{b}{c} = cos{\theta}$
+$$\frac{c}{c} = 1$
+
+Zde je vidět ona středoškolská mantra: sinus je definován jako **protilehlá ku přeponě**, sinus jako **přilehlá ku přeponě**.
+
+V praxi postupujeme tak, že si nejprve trojúhelník, se kterým pracujeme, podělením &bdquo;vměstnáme&ldquo; do jednotkové kružnice a provedeme potřebné výpočty. Vynásobením výsledků poté trojúhelník zpět &bdquo;roztáhneme&ldquo; na původní velikost.
+
+{{< details label="Vyřešte" summary="" >}}
+<!-- nějaký tradiční příklad -->
+
+{{< /details>}}
