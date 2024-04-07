@@ -1,13 +1,17 @@
 const setup = ()  => {
-  const pList = document.querySelectorAll('p');
+  const pList = document.querySelectorAll('p, li');
   pList.forEach(p => noMoreLonelyWords(p));
 };
 
 const clearWordBreaks = (target) => target.textContent = target.textContent.replace(/\u00a0/g, ' ');
 
+const hasOnlyText = (element) => {
+  return element.childNodes.every(node => node.nodeType === Node.TEXT_NODE);
+};
+
 const noMoreLonelyWords = (target) => {
-  // Do not touch MathJax elements
-  if (target.querySelector('.MathJax')) return;
+  // Do not touch paragraphs with non-text children
+  if !hasOnlyText(target)) return;
 
   let textArray = target.textContent.split(' ');
   let newTextArray = [];
