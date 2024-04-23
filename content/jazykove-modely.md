@@ -42,7 +42,7 @@ Jedná se stále o&nbsp;ten samý proces, jen tentokrát musíme vzít v&nbsp;po
 $$\text{NEBE JE \colorbox{yellow}{MODRÉ}}$$
 $$\text{SOUSED BYDLÍ \colorbox{yellow}{VEDLE}}$$
 
-Čtenář může oprávněně namítnout, že jazykový model, který hádá vždy jen jedno slovo, není příliš užitečný. Tento nedostatek lze ale lehce obejít, pokud výstup modelu opětovně dosadíme za jeho vstup -- postupně nám tak na výstupu krystalizuje text o&nbsp;libovolné délce. Tento proces nazýváme **rekurzí**.
+Čtenář může oprávněně namítnout, že jazykový model, který hádá vždy jen jedno slovo, není příliš užitečný. Tento nedostatek lze ale lehce obejít, pokud výstup modelu opětovně dosadíme za jeho vstup -- postupně nám tak na výstupu krystalizuje text o&nbsp;libovolné délce.
 
 $$\text{KOČKA \colorbox{yellow}{...}}$$
 $$\text{KOČKA CHYTÁ \colorbox{yellow}{...}}$$
